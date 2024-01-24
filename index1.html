@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="icon" type="image/x-icon" href="6831874.png">
+    <link rel="stylesheet" href="dom-basies-rock-paper .css">
+</head>
+
+<body>
+    <header>GAME{ ROCK-PAPER SCISSOR} </header>
+    <div>
+        <p class="heading_of_the_game">
+            Please select your open
+        </p>
+        <div>
+            <div class="button_container">
+                <button onclick="playgame('Rock')" class="rock-"><img src="image/Rock-hand.png" alt=""class="rock_bro"></button>
+                <button onclick="playgame('Paper')" class="rock-"><img src="image/Paper-hand.png" alt=""class="rock_bro">
+                </button>
+                <button onclick=" playgame('Scissor') " class="rock-"><img
+                        src="image/Scissor-hand.png" alt="" class="rock_bro"></button>
+            </div>
+            <p class="js-result result"></p>
+        
+            <p class="js-move">
+                <!-- you
+                <img src="icons8-clenched-fist-skin-type-1-100.png" alt="" class="rock_bro">
+                <img src="icons8-hand-tool-64.png" alt="">
+                computer -->
+            </p>
+
+            <p class="js-score score">
+            </p>
+            <button onclick=" 
+                score.losse=0;
+               score.tie=0;
+               score.win=0;
+               localStorage.removeItem('score')
+               showtime();" class="remove">Reset score</button>
+        </div>
+    </div>
+    <script src="rockPaper.js">
+    </script>
+</body>
+
+</html>
